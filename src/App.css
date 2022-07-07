@@ -109,7 +109,7 @@ h1 {
 }
 
 .movie-title {
-    margin: 0;
+    margin: 0px;
 }
 
 .movie-voting {
@@ -146,4 +146,70 @@ h1 {
     color:  white;
     border: none;
     cursor: pointer;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px){
+    .center-max-size {
+        max-width: 1000px;
+        margin: 0;
+        padding: 15px;
+    }
+    .header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 18px;
+        text-transform: uppercase;
+    }
+    .poster {
+        background-size: cover;
+        background-position: top center;
+        min-height: 100px;
+        display: flex;
+        align-items: flex-end;
+        padding-bottom: 50px;
+        position: relative;
+        top: 25px;
+    }
+    .poster-content {
+        width: 100%;
+    }
+    
+    
+    h1 {
+        font-size: 30px;
+        margin-top: 0;
+        line-height: 1;
+        margin-bottom: 30px;
+    }
+    .container {
+        background-color: #0F1014;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    .movie img {
+        height: 280px;
+        max-width: 100%;
+    }
+    .movie-voting {
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        background-color: #0F1014;
+        border: 1px solid gray;
+        padding: 10px;
+        font-size: 12px;
+        border-radius: 25px;
+    }
+    .close-video {
+        position: absolute;
+        z-index: 2;
+        bottom: -5px;
+        left: 10px;
+    }
+   
+  
 }
